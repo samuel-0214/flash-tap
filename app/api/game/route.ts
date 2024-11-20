@@ -15,7 +15,7 @@ import {
 } from "@solana/web3.js";
 import { GameDatabase } from '@/lib/database';
 import { generateRandomNumber } from '@/lib/utils';
-import { PRICE_PER_GAME, ACTION_URL, TREASURY_ADDRESS } from '@/config';
+import { PRICE_PER_GAME, ACTION_URL, TREASURY_ADDRESS } from '@/constants';
 import type { GameType } from '@/types';
 
 export async function GET(req: NextRequest) {
@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
     if (!gameId) {
       const payload: ActionGetResponse = {
         type: "action",
-        icon: "../../../public/flash-tap logo.png",
+        icon: "../../../public/flash-tap logo.pn",
         title: "FlashTap Game",
         label: "Start New Game",
         description: `Create a new FlashTap game\nBid Amount: ${PRICE_PER_GAME / 1e9} SOL`,
