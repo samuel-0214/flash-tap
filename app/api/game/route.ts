@@ -15,7 +15,7 @@ import {
 } from "@solana/web3.js";
 import { GameDatabase } from '@/lib/database';
 import { generateRandomNumber } from '@/lib/utils';
-import { PRICE_PER_GAME, ACTION_URL, TREASURY_ADDRESS } from '@/constants';
+import { PRICE_PER_GAME, ACTION_URL, TREASURY_ADDRESS } from '@/config';
 import type { GameType } from '@/types';
 
 export async function GET(req: NextRequest) {

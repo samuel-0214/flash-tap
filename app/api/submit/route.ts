@@ -4,7 +4,7 @@ import { ActionPostResponse, ACTIONS_CORS_HEADERS, createPostResponse } from "@s
 import { Transaction, Connection, PublicKey } from "@solana/web3.js";
 import { GameDatabase } from '@/lib/database';
 import { handleError, distributeRewards } from '@/lib/utils';
-import { ACTION_URL, HELIUS_RPC_URL } from '@/constants';
+import { ACTION_URL, HELIUS_RPC_URL } from '@/config';
 import type { GameType } from '@/types';
 
 export async function POST(req: NextRequest) {

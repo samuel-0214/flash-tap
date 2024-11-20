@@ -1,6 +1,6 @@
 import { Connection } from "@solana/web3.js";
 import { GameType } from '@/types';
-import { HELIUS_RPC_URL } from '@/constants';
+import { HELIUS_RPC_URL } from '@/config';
 
 export function generateRandomNumber(length: number): string {
   return Math.random().toString(36).substring(2, 2 + length);

@@ -3,7 +3,7 @@ import { ActionPostResponse, ACTIONS_CORS_HEADERS, createPostResponse } from "@s
 import { Transaction, PublicKey, ComputeBudgetProgram, SystemProgram } from "@solana/web3.js";
 import { GameDatabase } from '@/lib/database';
 import { generateRandomNumber, handleError } from '@/lib/utils';
-import { PRICE_PER_GAME, ACTION_URL, MEMO_PROGRAM_ID, TREASURY_ADDRESS } from '@/constants';
+import { PRICE_PER_GAME, ACTION_URL, MEMO_PROGRAM_ID, TREASURY_ADDRESS } from '@/config';
 import type { GameType } from '@/types';
 
 export async function POST(req: NextRequest) {
